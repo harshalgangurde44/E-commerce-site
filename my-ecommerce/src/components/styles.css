@@ -1,0 +1,127 @@
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart-item img {
+  height: auto;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.cart-item p {
+  margin: 0;
+}
+.cart-container {
+  margin: 0 auto;
+  border-radius: 5px;
+  width: 300px;
+  padding: 20px;
+}
+.cart-item button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #f44336;
+  color: white;
+  cursor: pointer;
+}
+
+.cart-item button:hover {
+  background-color: #d32f2f;
+}
+
+.login-container {
+  background-color: #e9f1f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 320px;
+  border: 1px solid solid;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-container .form-group {
+  margin-bottom: 20px;
+}
+
+.login-container .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login-container .form-group input[type="text"],
+.login-container .form-group input[type="password"] {
+  width: calc(100% - 12px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container .form-group input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signup-container {
+  background-color: #e9f1f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 320px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signup-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.signup-container .form-group {
+  margin-bottom: 20px;
+}
+
+.signup-container .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.signup-container .form-group input[type="text"],
+.signup-container .form-group input[type="password"] {
+  width: calc(100% - 12px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signup-container .form-group input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.search > input {
+  width: 100px;
+}
+.error {
+  color: red;
+  margin-top: 5px;
+}

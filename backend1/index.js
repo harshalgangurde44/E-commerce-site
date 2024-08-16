@@ -28,6 +28,7 @@ const Product = mongoose.model("Product", ProductSchema);
 app.post("/api/reg", async (req, res) => {
   try {
     // console.log(req.body);
+
     const { signupData } = req.body;
     const newUser = await User.create({
       name: signupData.signupName,
@@ -130,10 +131,10 @@ app.post("/login", async (req, res) => {
         .status(404)
         .json({ message: " please enter correct password" });
     }
-    const { password: pass, ...other } = user._doc;
+    const { password: pass, isAdmin, ...other } = user._doc; // Destructure isAdmin and omit password
     res.status(200).json({
-      message: "succuss",
-      other,
+      message: "Success",
+      user: { email, isAdmin, ...other },
     });
   } catch (error) {
     res.status(500).send(error);

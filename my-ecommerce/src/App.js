@@ -9,20 +9,23 @@ import Cart from "./components/Cart";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import { UserProvider } from "./components/UserProvider";
+import Thank from "./components/Thank";
 
 const App = () => {
   const [cart, setCart] = useState([]);
   const [user, setUser] = useState("");
 
   const removeFromCart = (index) => {
-    const updatedCart = [...cart];
-    updatedCart.splice(index, 1);
-    setCart(updatedCart);
+    if (index === null) {
+      setCart([]); // Clear the entire cart
+    } else {
+      setCart((prevCart) => prevCart.filter((_, i) => i !== index));
+    }
   };
 
   const handleLogin = (loginData) => {
-    // console.log("Login Data:", loginData);
-    setUser(loginData?.other);
+    console.log("Login Data:", loginData.user?.isAdmin);
+    setUser(loginData.user?.isAdmin);
   };
 
   const handleLogout = () => {
@@ -97,6 +100,7 @@ const App = () => {
             />
             <Route path="/login" element={<Login onLogin={handleLogin} />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/thanks" element={<Thank />} />
           </Routes>
         </div>
       </UserProvider>

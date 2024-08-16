@@ -33,7 +33,7 @@ const Login = ({ onLogin }) => {
   return (
     <div className="login-container">
       <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
+      <form>
         <div className="form-group">
           <label>Email:</label>
           <input
@@ -53,7 +53,7 @@ const Login = ({ onLogin }) => {
           />
         </div>
         <div className="form-group">
-          <button type="submit">Login</button>
+          <button onClick={handleSubmit}>Login</button>
         </div>
         {error && <div className="error">{error}</div>}
       </form>

@@ -17,9 +17,10 @@ Other user Can't make any Changes in the Websites
 🧐 Features
 Here're some of the project's best features:
 
-Real-time Updates: The applicationprovide real-time updates. When a task is created, updated, or deleted, users will receive these updates instantly.
+Real-time Updates: The application provide real-time updates.
+When a task is created, updated, or deleted, users will receive these updates instantly.
 Users can create, update, and delete tasks. These tasks are stored in MongoDB and can be accessed by all logged-in users
-It has Search Bar, Add to Card, CheckOut, Add the New Product
+It has Search Bar, Add to Card, CheckOut, Add the New Product with responsive css
 
 💻 Built with
 Technologies used in the project:

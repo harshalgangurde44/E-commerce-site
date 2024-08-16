@@ -1,7 +1,7 @@
 This Application is built using React + NodeJS 
 
 🚀 Demo
-[https://ecommerce-harshal.netlify.app/](https://harshals-ecommerce-site.netlify.app/)
+https://harshals-ecommerce-site.netlify.app/
 
 Testing the Application
 To test this application, please use the following credentials:

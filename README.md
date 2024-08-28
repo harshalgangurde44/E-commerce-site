@@ -31,3 +31,4 @@ Express
 MongoDB
 Redux
 CSS
+HTML
